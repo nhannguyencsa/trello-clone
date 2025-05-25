@@ -1,6 +1,20 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
