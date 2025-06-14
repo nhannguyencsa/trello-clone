@@ -13,6 +13,7 @@ body,
 .app {
   height: 100%;
   width: 100%;
+  @apply text-base;
 }
 
 @custom-variant dark (&:is(.dark *));
@@ -55,11 +56,14 @@ body,
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  /* alias for custom variables */
+  --height-app-bar-height: 58px;
+  
 }
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  --background: oklch(0.513 0.160 255.67);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -93,7 +97,7 @@ body,
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
+  --background: oklch(0.356 0.039 248.97);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
