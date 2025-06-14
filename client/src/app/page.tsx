@@ -1,11 +1,9 @@
-import ModeSelect from "@/components/ModeSelect"
+import AppBar from "@/components/AppBar/AppBar"
 
 export default function Home() {
   return (
     <>
-      <div className="flex justify-around">
-        <ModeSelect />
-      </div>
+      <AppBar />
     </>
   )
 }
