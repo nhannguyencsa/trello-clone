@@ -19,12 +19,12 @@ import Profiles from "@/components/AppBar/Menus/Profiles"
 
 const AppBar = () => {
   return (
-    <div className="flex justify-between items-center w-full h-app-bar-height px-2 border-1 border-yellow-500">
+    <div className="flex justify-between items-center w-full h-app-bar-height px-2 bg-app-bar-background dark:bg-app-bar-dark-background">
       <div className="flex justify-between items-center gap-4 cursor-pointer">
-        <AppsIcon className="w-6 h-6 text-white fill-current" />
+        <AppsIcon className="!w-5 !h-5 text-white fill-current" />
         <div className="flex justify-between items-center gap-1 cursor-pointer">
-          <TrelloIcon className="w-6 h-6 text-white fill-current" />
-          <span className="text-xl font-bold text-white">Trello</span>
+          <TrelloIcon className="!w-4 !h-4 text-white fill-current" />
+          <span className="text-l font-bold text-white">Trello</span>
         </div>
 
         <div className="hidden md:flex">
